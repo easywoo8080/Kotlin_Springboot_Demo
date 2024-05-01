@@ -1,10 +1,10 @@
-package com.example.demo.main.controller
+package com.example.demo.index.controller
 
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
 
 @Controller
-class MainController {
+class IndexController {
 
     /**@author moon
      * @see - 참고자료 ( 사이트 링크 )

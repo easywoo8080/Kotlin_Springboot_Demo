@@ -39,6 +39,13 @@ dependencies {
 
 	/*2024-04-13 thymeleaf*/
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+
+	/*2024-04-20 mybatis*/
+	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.0")
+//	implementation("com.oracle.ojdbc:orai18n:19.3.0.0")
+//	runtimeOnly("com.oracle.database.jdbc:ojdbc8")
+	runtimeOnly("com.mysql:mysql-connector-j")
+
 }
 
 tasks.withType<KotlinCompile> {

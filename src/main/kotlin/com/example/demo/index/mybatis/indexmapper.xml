@@ -1,0 +1,35 @@
+<!-- UserMapper.xml -->
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.IndexMapper">
+
+
+    <!-- SELECT 문장을 정의합니다. -->
+    <select id="getData" resultType="com.example.demo.index.mapper">
+        SELECT * FROM users WHERE id = #{id}
+    </select>
+
+<!--    &lt;!&ndash; SELECT 문장을 정의합니다. &ndash;&gt;-->
+<!--    <select id="getUserById" resultType="com.example.models.User">-->
+<!--        SELECT * FROM users WHERE id = #{id}-->
+<!--    </select>-->
+
+<!--    &lt;!&ndash; INSERT 문장을 정의합니다. &ndash;&gt;-->
+<!--    <insert id="insertUser" parameterType="com.example.models.User">-->
+<!--        INSERT INTO users (id, username, email) VALUES (#{id}, #{username}, #{email})-->
+<!--    </insert>-->
+
+<!--    &lt;!&ndash; UPDATE 문장을 정의합니다. &ndash;&gt;-->
+<!--    <update id="updateUser" parameterType="com.example.models.User">-->
+<!--        UPDATE users SET username = #{username}, email = #{email} WHERE id = #{id}-->
+<!--    </update>-->
+
+<!--    &lt;!&ndash; DELETE 문장을 정의합니다. &ndash;&gt;-->
+<!--    <delete id="deleteUserById">-->
+<!--        DELETE FROM users WHERE id = #{id}-->
+<!--    </delete>-->
+
+</mapper>
