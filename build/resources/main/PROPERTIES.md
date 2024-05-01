@@ -1,0 +1,10 @@
+
+#?? ??
+spring.application.name=demo
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+
+
+
+#mybatis & DB
+# Oracle Connection Settings
