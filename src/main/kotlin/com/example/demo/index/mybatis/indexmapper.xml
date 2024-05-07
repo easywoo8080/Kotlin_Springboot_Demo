@@ -9,7 +9,7 @@
 
     <!-- SELECT 문장을 정의합니다. -->
     <select id="getData" resultType="com.example.demo.index.mapper">
-        SELECT * FROM users WHERE id = #{id}
+<!--        SELECT * FROM users WHERE id = #{id}-->
     </select>
 
 <!--    &lt;!&ndash; SELECT 문장을 정의합니다. &ndash;&gt;-->
