@@ -1,3 +1,4 @@
+//import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -44,7 +45,11 @@ dependencies {
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.0")
 //	implementation("com.oracle.ojdbc:orai18n:19.3.0.0")
 //	runtimeOnly("com.oracle.database.jdbc:ojdbc8")
-	runtimeOnly("com.mysql:mysql-connector-j")
+//	runtimeOnly("com.mysql:mysql-connector-j")
+
+	runtimeOnly("org.postgresql:postgresql")
+
+	implementation("org.springframework:spring-beans:6.1.5")
 
 }
 
@@ -58,3 +63,5 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+

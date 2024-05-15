@@ -4,15 +4,19 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.example.demo.mapper.IndexMapper">
+<mapper namespace="com.example.demo.index.mapper.IndexMapper">
 
 
-    <!-- SELECT 문장을 정의합니다. -->
-    <select id="getData" resultType="com.example.demo.index.mapper">
-<!--        SELECT * FROM users WHERE id = #{id}-->
+    <select id="select" >
+        SELECT * FROM "NAISYS".ehswrt_ano_flag;
     </select>
 
-<!--    &lt;!&ndash; SELECT 문장을 정의합니다. &ndash;&gt;-->
+    <select id="selectAll">
+        SELECT * FROM "NAISYS".ehswrt_ano_flag;
+    </select>
+
+
+    <!--    &lt;!&ndash; SELECT 문장을 정의합니다. &ndash;&gt;-->
 <!--    <select id="getUserById" resultType="com.example.models.User">-->
 <!--        SELECT * FROM users WHERE id = #{id}-->
 <!--    </select>-->
