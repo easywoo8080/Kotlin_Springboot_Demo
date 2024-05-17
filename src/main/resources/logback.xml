@@ -9,15 +9,15 @@
     </appender>
 
     <logger name="jdbc" level="OFF" />
-    <logger name="jdbc.sqlonly" level="DEBUG" />
-    <logger name="jdbc.sqltiming" level="DEBUG" />
+    <logger name="jdbc.sqlonly" level="info" />
+    <logger name="jdbc.sqltiming" level="info" />
     <logger name="jdbc.audit" level="OFF" />
-    <logger name="jdbc.resultset" level="DEBUG" />
-    <logger name="jdbc.resultsettable" level="DEBUG" />
+    <logger name="jdbc.resultset" level="info" />
+    <logger name="jdbc.resultsettable" level="info" />
     <logger name="jdbc.connection" level="OFF" />
 
 
-    <root level="DEBUG">
+    <root level="info">
         <appender-ref ref="STDOUT" />
     </root>
 

@@ -9,5 +9,6 @@ interface Biz<K, V> {
     fun get(k: K): V
 
     @Throws(Exception::class)
-    fun get()
+    fun getAll() : List<V>
+
 }

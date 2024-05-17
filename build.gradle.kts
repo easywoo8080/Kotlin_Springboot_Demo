@@ -42,10 +42,13 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 
 	/*2024-04-20 mybatis*/
-	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.0")
+	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3")
 //	implementation("com.oracle.ojdbc:orai18n:19.3.0.0")
 //	runtimeOnly("com.oracle.database.jdbc:ojdbc8")
 //	runtimeOnly("com.mysql:mysql-connector-j")
+
+	// https://mvnrepository.com/artifact/org.postgresql/postgresql
+	implementation("org.postgresql:postgresql:42.7.3")
 
 	runtimeOnly("org.postgresql:postgresql")
 
