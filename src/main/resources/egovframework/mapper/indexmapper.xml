@@ -5,11 +5,11 @@
 <mapper namespace="com.example.demo.index.mapper.IndexMapper">
 
     <select id="select" resultType="com.example.demo.index.vo.IndexVO">
-        SELECT  1
+        SELECT * FROM "NAISYS".ehswrt_ano_flag;
     </select>
 
     <select id="selectAll" resultType="com.example.demo.index.vo.IndexVO">
-        SELECT * FROM NAISYS.ehswrt_ano_flag;
+        SELECT * FROM "NAISYS".ehswrt_ano_flag;
     </select>
 
 </mapper>

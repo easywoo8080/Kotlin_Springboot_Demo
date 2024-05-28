@@ -16,7 +16,13 @@ class IndexBiz @Autowired constructor(private val dao: IndexMapper) : Biz<Int, I
         println("get.......")
 
         val vo: IndexVO = dao.select(k)
-        print(vo.toString())
+
+        vo?.let {
+            println(it.toString())
+        } ?: run {
+            println("vo is null")
+        }
+
         return vo
     }
 
