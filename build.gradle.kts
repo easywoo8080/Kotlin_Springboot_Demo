@@ -2,7 +2,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	id("org.springframework.boot") version "3.2.4"
+	id("org.springframework.boot") version "3.2.5"
 	id("io.spring.dependency-management") version "1.1.4"
 	kotlin("jvm") version "1.9.23"
 	kotlin("plugin.spring") version "1.9.23"
@@ -42,7 +42,13 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 
 	/*2024-04-20 mybatis*/
+	// https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot
+	implementation("org.mybatis.spring.boot:mybatis-spring-boot:3.0.3")
+
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3")
+	// https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-autoconfigure
+	implementation("org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:3.0.3")
+
 //	implementation("com.oracle.ojdbc:orai18n:19.3.0.0")
 //	runtimeOnly("com.oracle.database.jdbc:ojdbc8")
 //	runtimeOnly("com.mysql:mysql-connector-j")
@@ -66,5 +72,4 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
-
 
