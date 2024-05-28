@@ -14,8 +14,8 @@ class IndexBiz @Autowired constructor(private val dao: IndexMapper) : Biz<Int, I
     @Throws(Exception::class)
     override fun get(k: Int): IndexVO {
         println("get.......")
-
-        val vo: IndexVO = dao.select(k)
+        var key = k;
+        val vo: IndexVO = dao.select(key)
         print(vo.toString())
         return vo
     }
