@@ -1,9 +1,9 @@
 #mybatis & DB
 # Oracle Connection Settings
-spring.datasource.driverClassName=
-spring.datasource.url=
-spring.datasource.username=
-spring.datasource.password=
+spring.datasource.driverClassName=org.postgresql.Driver
+spring.datasource.url=jdbc:postgresql://nivuskorea.asuscomm.com:847/postgres
+spring.datasource.username=postgres
+spring.datasource.password=47840847
 
 
 
@@ -16,7 +16,7 @@ spring.thymeleaf.suffix=.html
 
 mybatis.type-aliases-package=com.example.demo.index.vo
 
-mybatis.mapper-locations=classpath:/egovframework/mapper/*.xml
+mybatis.mapper-locations=classpath:/egovframework/com/mapper/*/*_postgres.xml
 mybatis.configuration.log-impl=org.apache.ibatis.logging.stdout.StdOutImpl
 
 
